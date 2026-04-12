@@ -6,37 +6,42 @@
         <title>Zajno</title>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body>
+    <body class="p-2.5 md:py-4 md:px-5">
         <nav
-            class="lowercase py-4 px-5 absolute top-0 left-0 w-full flex items-start justify-between text-[0.90rem] font-light"
+            class="lowercase p-2.5 md:py-4 md:px-5 absolute top-0 left-0 w-full flex items-start justify-between text-[0.90rem] font-light"
         >
-            <div class="text-px">
+            <div class="text-px hidden md:block">
                 <a href="#">zajno®</a>
             </div>
 
-            <div class="w-[20%]">
+            <div class="w-[20%] hidden">
                 <a href="#">digital studio</a>
             </div>
 
-            <div class="flex flex-col items-start justify-start">
+            <div class="md:flex flex-col items-start justify-start hidden">
                 <a href="#">work</a>
                 <a href="#">studio</a>
                 <a href="#">contact</a>
             </div>
 
-            <div class="flex flex-col items-start justify-start w-[15%]">
+            <div
+                class="md:flex flex-col items-start justify-start w-[15%] hidden"
+            >
                 <a href="#">twitter</a>
                 <a href="#">instagram</a>
             </div>
 
-            <div href="#">los angeles, CA</div>
+            <div class="hidden md:block">los angeles, CA</div>
+            <div class="md:hidden w-full text-right">
+                <div class="capitalize">Menu</div>
+            </div>
         </nav>
 
-        <div class="hero">
+        <div class="hero-logo">
             <img src="./images/zajno.png" alt="" />
         </div>
 
-        <div class="hero2 h-[90vh] mt-7">
+        <div class="hero-video h-[45vh] md:h-[90vh] mt-4 md:mt-7">
             <img
                 class="h-full w-full object-cover"
                 src="./images/hero2.avif"
@@ -44,7 +49,229 @@
             />
         </div>
 
-        <div class="h-screen"></div>
+        <div id="ho-wr" class="pt-10 lg:pt-20 w-full">
+            <div
+                class="ho-wr-to flex items-start justify-between gap-9 text-[0.9rem] lg:text-[1.6rem]"
+            >
+                <h2 class="flex items-center justify-between gap-1">
+                    <span class="pt-0.5"> Work</span>
+                    <span
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.75"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide h-5 lg:h-7 w-5 lg:w-7 lucide-arrow-down-right-icon lucide-arrow-down-right"
+                        >
+                            <path d="m7 7 10 10" />
+                            <path d="M17 7v10H7" />
+                        </svg>
+                    </span>
+                </h2>
+
+                <p class="leading-tight font-thin lg:ml-[10%]">
+                    At Zajno, we know your time is precious, and that’s why we
+                    prioritize simplicity and efficiency. Our team has the
+                    expertise and creativity to handle everything from research
+                    and planning to custom design and development, freeing you
+                    from the burden of micromanagement.
+                </p>
+
+                <div class="ml-[40%] hidden lg:block whitespace-nowrap">
+                    ©2015-26
+                </div>
+            </div>
+
+            <ul
+                class="ho-wr-bo w-full lg:w-[82%] ml-auto pt-10 lg:pt-20 flex flex-col gap-1"
+            >
+                <li>
+                    <div
+                        class="w-full flex relative py-2 lg:py-5 lg:text-[1.6rem]"
+                    >
+                        <div
+                            class="top-border-line h-0.5 w-full flex justify-end absolute -top-1 left-0"
+                        >
+                            <div
+                                class="h-[0.09rem] bg-black w-[73%] lg:w-full"
+                            ></div>
+                        </div>
+                        <div class="w-[78%]">01</div>
+
+                        <div
+                            class="hidden leading-none lg:block w-full lg:pr-50"
+                        >
+                            Design & <br />
+                            development of the website’s 3 pages
+                        </div>
+
+                        <div class="w-full pr-5 leading-none">
+                            <h2 class="text-[#ff3928]">Brightmark</h2>
+                            <div>Technology</div>
+                        </div>
+
+                        <div class="image-cont bg-red-800 w-full">
+                            <img
+                                class="w-full"
+                                src="./images/wrk-1.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="bottom-border-line h-0.5 w-full flex justify-end absolute -bottom-1 left-0"
+                        >
+                            <div
+                                class="h-[0.09rem] bg-black w-[73%] lg:w-full"
+                            ></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div
+                        class="w-full flex relative py-2 lg:py-5 lg:text-[1.6rem]"
+                    >
+                        <div class="w-[78%]">02</div>
+
+                        <div
+                            class="hidden leading-none lg:block w-full lg:pr-50"
+                        >
+                            Homepage design, 2D illustrations, animations,
+                            visual identity
+                        </div>
+
+                        <div class="w-full pr-5 leading-none">
+                            <h2 class="text-[#ff3928]">Ooki</h2>
+                            <div>Crypto</div>
+                        </div>
+
+                        <div class="image-cont bg-red-800 w-full">
+                            <img
+                                class="w-full"
+                                src="./images/wrk-2.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="bottom-border-line h-0.5 w-full flex justify-end absolute -bottom-1 left-0"
+                        >
+                            <div
+                                class="h-[0.09rem] bg-black w-[73%] lg:w-full"
+                            ></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div
+                        class="w-full flex relative py-2 lg:py-5 lg:text-[1.6rem]"
+                    >
+                        <div class="w-[78%]">03</div>
+
+                        <div
+                            class="hidden leading-none lg:block w-full lg:pr-50"
+                        >
+                            Full-cycle website creation, branding
+                        </div>
+
+                        <div class="w-full pr-5 leading-none">
+                            <h2 class="text-[#ff3928]">8Finance</h2>
+                            <div>Crypto</div>
+                        </div>
+
+                        <div class="image-cont bg-red-800 w-full">
+                            <img
+                                class="w-full"
+                                src="./images/wrk-3.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="bottom-border-line h-0.5 w-full flex justify-end absolute -bottom-1 left-0"
+                        >
+                            <div
+                                class="h-[0.09rem] bg-black w-[73%] lg:w-full"
+                            ></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div
+                        class="w-full flex relative py-2 lg:py-5 lg:text-[1.6rem]"
+                    >
+                        <div class="w-[78%]">04</div>
+
+                        <div
+                            class="hidden leading-none lg:block w-full lg:pr-50"
+                        >
+                            Full-cycle website creation, branding
+                        </div>
+
+                        <div class="w-full pr-5 leading-none">
+                            <h2 class="text-[#ff3928]">
+                                Altered state <br />
+                                machine
+                            </h2>
+                            <div>Technology</div>
+                        </div>
+
+                        <div class="image-cont bg-red-800 w-full">
+                            <img
+                                class="w-full"
+                                src="./images/wrk-4.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="bottom-border-line h-0.5 w-full flex justify-end absolute -bottom-1 left-0"
+                        >
+                            <div
+                                class="h-[0.09rem] bg-black w-[73%] lg:w-full"
+                            ></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div
+                        class="w-full flex relative py-2 lg:py-5 lg:text-[1.6rem]"
+                    >
+                        <div class="w-[78%]">05</div>
+
+                        <div
+                            class="hidden leading-none lg:block w-full lg:pr-50"
+                        >
+                            Full-cycle website creation
+                        </div>
+
+                        <div class="w-full pr-5 leading-none">
+                            <h2 class="text-[#ff3928]">Maslo</h2>
+                            <div>AI platfom and app</div>
+                        </div>
+
+                        <div class="image-cont bg-red-800 w-full">
+                            <img
+                                class="w-full"
+                                src="./images/wrk-5.jpeg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="ho-st" class="h-screen relative">
+            <div
+                class="bottom-border-line h-0.5 w-full flex justify-end absolute -top-1 left-0"
+            >
+                <div class="h-[0.09rem] bg-black w-[73%] lg:w-full"></div>
+            </div>
+        </div>
 
         <!-- <canvas></canvas> -->
         <!-- <script type="module" src="./main.js"></script> -->
