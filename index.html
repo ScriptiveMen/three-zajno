@@ -6,7 +6,7 @@
         <title>Zajno</title>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body class="p-2.5 md:py-4 md:px-5">
+    <body class="p-2.5 md:py-4 md:px-5 lg:text-[1.6rem]">
         <nav
             class="lowercase p-2.5 md:py-4 md:px-5 absolute top-0 left-0 w-full flex items-start justify-between text-[0.90rem] font-light"
         >
@@ -32,7 +32,7 @@
             </div>
 
             <div class="hidden md:block">los angeles, CA</div>
-            <div class="md:hidden w-full text-right">
+            <div class="md:hidden w-full text-right fixed top-3 right-3">
                 <div class="capitalize">Menu</div>
             </div>
         </nav>
@@ -86,7 +86,7 @@
             </div>
 
             <ul
-                class="ho-wr-bo w-full lg:w-[82%] ml-auto pt-10 lg:pt-20 flex flex-col gap-1"
+                class="ho-wr-bo w-full lg:w-[82%] ml-auto pt-10 lg:pt-20 flex flex-col gap-1.5"
             >
                 <li>
                     <div
@@ -113,7 +113,7 @@
                             <div>Technology</div>
                         </div>
 
-                        <div class="image-cont bg-red-800 w-full">
+                        <div class="image-cont w-full">
                             <img
                                 class="w-full"
                                 src="./images/wrk-1.jpeg"
@@ -148,7 +148,7 @@
                             <div>Crypto</div>
                         </div>
 
-                        <div class="image-cont bg-red-800 w-full">
+                        <div class="image-cont w-full">
                             <img
                                 class="w-full"
                                 src="./images/wrk-2.jpeg"
@@ -182,7 +182,7 @@
                             <div>Crypto</div>
                         </div>
 
-                        <div class="image-cont bg-red-800 w-full">
+                        <div class="image-cont w-full">
                             <img
                                 class="w-full"
                                 src="./images/wrk-3.jpeg"
@@ -219,7 +219,7 @@
                             <div>Technology</div>
                         </div>
 
-                        <div class="image-cont bg-red-800 w-full">
+                        <div class="image-cont w-full">
                             <img
                                 class="w-full"
                                 src="./images/wrk-4.jpeg"
@@ -253,7 +253,7 @@
                             <div>AI platfom and app</div>
                         </div>
 
-                        <div class="image-cont bg-red-800 w-full">
+                        <div class="image-cont w-full">
                             <img
                                 class="w-full"
                                 src="./images/wrk-5.jpeg"
@@ -265,13 +265,98 @@
             </ul>
         </div>
 
-        <div id="ho-st" class="h-screen relative">
+        <div id="ho-st" class="relative pt-10 pb-10 lg:pt-20 lg:pb-20">
             <div
-                class="bottom-border-line h-0.5 w-full flex justify-end absolute -top-1 left-0"
+                class="top-border-line h-0.5 w-full flex justify-end absolute top-0.5 left-0"
             >
-                <div class="h-[0.09rem] bg-black w-[73%] lg:w-full"></div>
+                <div class="h-[0.09rem] bg-black w-full"></div>
+            </div>
+
+            <div
+                class="ho-wr-to flex items-start justify-between gap-9 text-[0.9rem] lg:text-[1.6rem]"
+            >
+                <h2 class="flex items-center justify-between gap-1">
+                    <span class="pt-0.5">Studio</span>
+                    <span
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.75"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide h-5 lg:h-7 w-5 lg:w-7 lucide-arrow-down-right-icon lucide-arrow-down-right"
+                        >
+                            <path d="m7 7 10 10" />
+                            <path d="M17 7v10H7" />
+                        </svg>
+                    </span>
+                </h2>
+
+                <p class="leading-tight font-thin lg:ml-[10%]">
+                    We're a digital design studio that's all about breaking the
+                    mold! We don't do boring websites or ordinary apps - we
+                    specialize in crafting the wildest, most unconventional
+                    digital experiences out there.
+                </p>
+
+                <div class="ml-[45%] hidden lg:block whitespace-nowrap"></div>
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row w-full items-center justify-center pt-10"
+            >
+                <div class="image-cont bg-amber-500 w-full">
+                    <img
+                        class="h-full w-full object-cover"
+                        src="./images/st-1.jpeg"
+                        alt=""
+                    />
+                </div>
+                <div class="flex justify-center w-full pt-5">
+                    <div class="w-full hidden lg:block"></div>
+
+                    <div class="w-full relative pl-2">
+                        <div class="st-line h-full absolute top-0 left-0 w-1">
+                            <div class="bg-black h-full w-[0.09rem]"></div>
+                        </div>
+                        <h3 class="pb-3">Services:</h3>
+                        <ul class="leading-tight">
+                            <li class="capitalize">Web development</li>
+                            <li class="capitalize">Web design</li>
+                            <li class="capitalize">Web design</li>
+                            <li class="capitalize">Web design</li>
+                            <li class="capitalize">Web design</li>
+                            <li class="capitalize">Web design</li>
+                            <li class="capitalize">Web design</li>
+                            <li class="capitalize">Web design</li>
+                        </ul>
+                    </div>
+                    <div class="w-full relative pl-2">
+                        <div class="st-line h-full absolute top-0 left-0 w-1">
+                            <div class="bg-black h-full w-[0.09rem]"></div>
+                        </div>
+                        <h3 class="pb-3">Stats:</h3>
+                        <ul class="leading-tight">
+                            <li class="capitalize">Founded 2015</li>
+                            <li class="capitalize">Founded 2015</li>
+                            <li class="capitalize">Founded 2015</li>
+                            <li class="capitalize">Founded 2015</li>
+                            <li class="capitalize">Founded 2015</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bottom-border-line h-0.5 w-full flex justify-end absolute bottom-0 left-0"
+            >
+                <div class="h-[0.09rem] bg-black w-full"></div>
             </div>
         </div>
+
+        <div class="h-screen"></div>
 
         <!-- <canvas></canvas> -->
         <!-- <script type="module" src="./main.js"></script> -->
