@@ -247,6 +247,9 @@
   .ml-auto {
     margin-left: auto;
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
@@ -267,6 +270,12 @@
   }
   .h-\[10vw\] {
     height: 10vw;
+  }
+  .h-\[30vh\] {
+    height: 30vh;
+  }
+  .h-\[35vh\] {
+    height: 35vh;
   }
   .h-\[40vw\] {
     height: 40vw;
@@ -569,6 +578,11 @@
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .lg\:h-7 {
