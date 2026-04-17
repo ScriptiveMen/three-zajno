@@ -398,37 +398,87 @@
                 </div>
             </div>
 
-            <div class="bottom h-[50vh] lg:h-[95vh] relative pt-20">
-                <div
-                    class="pl-image-con flex items-start justify-between w-full z-10 relative"
+            <div class="bottom h-[50vh] lg:h-[92vh] relative pt-14">
+                <ul
+                    id="carousel"
+                    class="h-[70%] px-[0.62rem] lg:px-[1.61rem] w-screen left-1/2 -translate-x-1/2 top-12 absolute z-10 flex gap-3 lg:gap-35 overflow-y-hidden overflow-x-auto snap-x select-none no-scrollbar"
                 >
-                    <div class="flex shrink-0 flex-col gap-1 w-88">
-                        <div class="pl-img">
-                            <img src="./images/pl-1.avif" alt="" />
-                        </div>
-                        <div class="pl-txt text-[0.9rem]">Motion.ed - 2023</div>
-                    </div>
-                    <div class="flex shrink-0 flex-col gap-1 w-70 mt-20">
-                        <div class="pl-img">
-                            <img src="./images/pl-2.avif" alt="" />
-                        </div>
-                        <div class="pl-txt text-[0.9rem]">Motion.ed - 2023</div>
-                    </div>
-                    <div class="flex shrink-0 flex-col gap-1 w-88">
-                        <div class="pl-img">
-                            <img src="./images/pl-3.avif" alt="" />
-                        </div>
-                        <div class="pl-txt text-[0.9rem]">Motion.ed - 2023</div>
-                    </div>
-                    <div class="flex shrink-0 flex-col gap-1 w-70 mt-20 ml-40">
-                        <div class="pl-img">
-                            <img src="./images/pl-4.avif" alt="" />
-                        </div>
-                        <div class="pl-txt text-[0.9rem]">Motion.ed - 2023</div>
-                    </div>
-                </div>
+                    <li class="h-full shrink-0">
+                        <img
+                            class="h-[47vw] lg:h-[20vw] aspect-auto select-none pointer-events-none"
+                            src="./images/pl-1.avif"
+                            alt=""
+                            draggable="false"
+                        />
+                        <p class="text-sm lg:text-[0.90rem]">
+                            Motion.ed - 2025
+                        </p>
+                    </li>
 
-                <div class="svg absolute bottom-0 left-0 w-full">
+                    <li class="h-full shrink-0 lg:mt-22">
+                        <img
+                            class="h-[47vw] lg:h-[20vw] aspect-auto select-none pointer-events-none"
+                            src="./images/pl-2.avif"
+                            alt=""
+                            draggable="false"
+                        />
+                        <p class="text-sm lg:text-[0.90rem] wrap-normal">
+                            The power of sound<br />
+                            — 2019
+                        </p>
+                    </li>
+
+                    <li class="h-full shrink-0">
+                        <img
+                            class="h-[47vw] lg:h-[20vw] aspect-auto select-none pointer-events-none"
+                            src="./images/pl-3.avif"
+                            alt=""
+                            draggable="false"
+                        />
+                        <p class="text-sm lg:text-[0.90rem]">TL/E — 2023</p>
+                    </li>
+
+                    <li class="h-full shrink-0 lg:mt-22">
+                        <img
+                            class="h-[47vw] lg:h-[20vw] aspect-auto select-none pointer-events-none"
+                            src="./images/pl-4.avif"
+                            alt=""
+                            draggable="false"
+                        />
+                        <p class="text-sm lg:text-[0.90rem]">
+                            Zajno Grid — 2018
+                        </p>
+                    </li>
+
+                    <li class="h-full shrink-0">
+                        <img
+                            class="h-[47vw] lg:h-[20vw] aspect-auto select-none pointer-events-none"
+                            src="./images/pl-5.jpeg"
+                            alt=""
+                            draggable="false"
+                        />
+                        <p class="text-sm lg:text-[0.90rem]">
+                            Playlists — 2020
+                        </p>
+                    </li>
+
+                    <li class="h-full shrink-0 lg:mt-22">
+                        <img
+                            class="h-[47vw] lg:h-[20vw] aspect-auto select-none pointer-events-none"
+                            src="./images/pl-6.jpeg"
+                            alt=""
+                            draggable="false"
+                        />
+                        <p class="text-sm lg:text-[0.90rem]">
+                            Journey — Coming soon
+                        </p>
+                    </li>
+                </ul>
+
+                <!-- svg -->
+                <div
+                    class="svg select-none pointer-events-none -z-10 absolute bottom-0 left-0 w-full"
+                >
                     <svg id="ho-wo-z15" viewBox="0 0 1876 492" fill="#ff3928">
                         <polygon
                             points="1780.262,62.091 1790.349,62.091 1790.349,13.557 1809.383,13.557 1809.383,4.42 1761.038,4.42 1761.038,13.557 1780.262,13.557"
@@ -459,6 +509,7 @@
         <div class="h-screen"></div>
 
         <!-- <canvas></canvas> -->
+        <script src="./scroller.js"></script>
         <!-- <script type="module" src="./main.js"></script> -->
     </body>
 </html>
