@@ -12,8 +12,6 @@ body {
     font-family: "sh";
     background-color: #ebebeb;
 }
-
-/* Hide scrollbar */
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
@@ -21,4 +19,8 @@ body {
 .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+img {
+    opacity: 0;
 }

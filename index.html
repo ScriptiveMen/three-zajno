@@ -8,7 +8,7 @@
     </head>
     <body class="p-2.5 md:py-4 md:px-5 lg:text-[1.6rem]">
         <nav
-            class="lowercase p-2.5 md:py-4 md:px-5 absolute top-0 left-0 w-full flex items-start justify-between text-[0.90rem] font-light"
+            class="lowercase z-[99999] p-2.5 md:py-4 md:px-5 absolute top-0 left-0 w-full flex items-start justify-between text-[0.90rem] font-light"
         >
             <div class="text-px hidden md:block">
                 <a href="#">zajno®</a>
@@ -307,7 +307,7 @@
             <div
                 class="flex flex-col md:flex-row w-full items-center justify-center pt-10 lg:pt-20"
             >
-                <div class="image-cont bg-amber-500 w-full">
+                <div class="image-cont w-full">
                     <img
                         class="h-auto w-full object-cover"
                         src="./images/st-1.jpeg"
@@ -568,8 +568,8 @@
             </div>
         </div>
 
-        <canvas id="canvas"></canvas>
+        <canvas class="fixed top-0 left-0 z-[999]" id="canvas"></canvas>
         <script src="./scroller.js"></script>
-        <!-- <script type="module" src="./main.js"></script> -->
+        <script type="module" src="./main.js"></script>
     </body>
 </html>
