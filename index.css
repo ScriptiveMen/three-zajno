@@ -10,7 +10,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: "sh";
-    background-color: #ebebeb;
+    /* background-color: #ebebeb; */
 }
 .no-scrollbar::-webkit-scrollbar {
     display: none;
