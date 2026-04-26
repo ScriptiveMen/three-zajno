@@ -6,7 +6,8 @@
         <title>Zajno</title>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body class="p-2.5 md:py-4 md:px-5 lg:text-[1.6rem]">
+    <body class="p-2.5 md:py-4 md:px-5 lg:text-[1.6rem] relative">
+
         <nav
             class="lowercase z-[99999] p-2.5 md:py-4 md:px-5 absolute top-0 left-0 w-full flex items-start justify-between text-[0.90rem] font-light"
         >
@@ -478,7 +479,7 @@
 
                 <!-- svg -->
                 <div
-                    class="svg select-none pointer-events-none -z-10 absolute bottom-0 left-0 w-full"
+                    class="svg select-none pointer-events-none z-[-2] absolute bottom-0 left-0 w-full"
                 >
                     <svg id="ho-wo-z15" viewBox="0 0 1876 492" fill="#ff3928">
                         <polygon
@@ -567,6 +568,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <canvas class="fixed top-0 left-0 z-[-1]" id="canvas"></canvas>
         <script src="./scroller.js"></script>
