@@ -15,7 +15,7 @@
                 <a href="#">zajno®</a>
             </div>
 
-            <div class="w-[20%] hidden">
+            <div class="w-[20%] hidden md:block">
                 <a href="#">digital studio</a>
             </div>
 
@@ -42,12 +42,23 @@
             <img src="./images/zajno.png" alt="" />
         </div>
 
-        <div class="hero-video h-[45vh] md:h-[90vh] mt-4 md:mt-7">
+        <div class="hero-video h-[45vh] md:h-[90vh] mt-4 md:mt-7 relative">
             <img
                 class="h-full w-full object-cover"
                 src="./images/hero2.avif"
                 alt=""
             />
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 md:gap-4 cursor-pointer">
+                <div class="h-12 md:h-20 w-12 shrink-0 md:w-20 rounded-full bg-white flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-7 w-4 md:w-7" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                    </svg>
+                </div>
+                <div class="text-white leading-5">
+                    <h3 class="text-sm md:text-2xl">Watch Showreel</h3>
+                    <span class="text-xs md:text-sm">2015-26</span>
+                </div>
+            </div>
         </div>
 
         <div id="ho-wr" class="pt-10 lg:pt-20 w-full">
