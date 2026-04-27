@@ -115,7 +115,6 @@ function updatePlanesOnResize() {
     });
 }
 
-// Only update position if effect is enabled
 function updatePlanePosition() {
     if (!effectEnabled) return;
     planeInfos.forEach((planeInfo, idx) => {
@@ -192,7 +191,6 @@ if (effectEnabled) {
     animate();
 }
 
-// Responsive: adjust on resize, including enabling/disabling effect
 window.addEventListener("resize", function (e) {
     updateImageOpacityForDevice();
     const shouldEnable = !isMobileDevice();
